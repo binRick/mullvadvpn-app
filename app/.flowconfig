@@ -1,0 +1,19 @@
+[ignore]
+; React-native sources: https://github.com/facebook/flow/issues/3875
+<PROJECT_ROOT>/node_modules/react-native/Libraries/react-native/.*
+
+; Ignore mobile app for the time being
+<PROJECT_ROOT>/packages/mobile/.*
+
+[include]
+
+[libs]
+flow-libs/
+
+[lints]
+
+[options]
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+munge_underscores=true
+
+[strict]

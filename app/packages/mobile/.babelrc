@@ -1,0 +1,3 @@
+{
+  "presets": ["react-native", ["transform-builtin-extend", { "globals": ["Error"] }]]
+}

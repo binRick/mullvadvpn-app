@@ -1,0 +1,11 @@
+[ignore]
+*./node_modules/react-native/Libraries/react-native/.*
+
+[include]
+
+[libs]
+
+[options]
+emoji=true
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+munge_underscores=true
