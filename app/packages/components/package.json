@@ -5,7 +5,7 @@
   "license": "GPL-3.0",
   "private": true,
   "scripts": {
-    "postinstall": "npm run build",
+    "postinstall": "yarn run build",
     "test": "mocha -R spec --require babel-core/register --require \"test/setup.js\" \"test/**/*.spec.js\"",
     "build": "run-s private:build:clean private:build:compile",
     "private:build:clean": "rimraf build",

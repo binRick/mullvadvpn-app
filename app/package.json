@@ -8,8 +8,8 @@
   "scripts": {
     "flow": "flow",
     "lint": "eslint \"packages/**/*.js\"",
-    "format": "npm run private:format -- --write",
-    "check-format": "npm run private:format -- --list-different",
+    "format": "yarn run private:format -- --write",
+    "check-format": "yarn run private:format -- --list-different",
     "private:format": "prettier \"packages/**/*.{js,css}\""
   },
   "devDependencies": {
