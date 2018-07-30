@@ -59,6 +59,9 @@ export default {
   view_logs_button: Styles.createViewStyle({
     marginBottom: 16,
   }),
+  edit_message_button: Styles.createViewStyle({
+    marginBottom: 16,
+  }),
   support__subtitle: Styles.createTextStyle({
     fontFamily: 'Open Sans',
     fontSize: 13,
