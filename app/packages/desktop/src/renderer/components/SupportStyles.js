@@ -59,7 +59,14 @@ export default {
   view_logs_button: Styles.createViewStyle({
     marginBottom: 16,
   }),
-
+  support__subtitle: Styles.createTextStyle({
+    fontFamily: 'Open Sans',
+    fontSize: 13,
+    fontWeight: 600,
+    color: palette.white60,
+    lineHeight: 20,
+    letterSpacing: -0.2,
+  }),
   support__form_email: Styles.createTextStyle({
     flex: 1,
     borderRadius: 4,
