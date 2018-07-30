@@ -1,88 +1,86 @@
 // @flow
-import { createViewStyles } from '../lib/styles';
+import { Styles } from 'reactxp';
 import { palette } from '@mullvad/components';
 
 export default {
-  ...createViewStyles({
-    select_location: {
-      backgroundColor: palette.darkBlue,
-      flex: 1,
-    },
-    container: {
-      flexDirection: 'column',
-      flex: 1,
-    },
-    title_header: {
-      paddingBottom: 0,
-    },
-    subtitle_header: {
-      paddingTop: 0,
-    },
-    content: {
-      overflow: 'visible',
-    },
-    relay_status: {
-      width: 16,
-      height: 16,
-      borderRadius: 8,
-      marginLeft: 4,
-      marginRight: 4,
-      marginTop: 20,
-      marginBottom: 20,
-    },
-    relay_status__inactive: {
-      backgroundColor: palette.red95,
-    },
-    relay_status__active: {
-      backgroundColor: palette.green90,
-    },
-    tick_icon: {
-      color: palette.white,
-      marginLeft: 0,
-      marginRight: 0,
-      marginTop: 15.5,
-      marginBottom: 15.5,
-    },
-    country: {
-      flexDirection: 'column',
-      flex: 0,
-    },
-    collapse_button: {
-      flex: 0,
-      alignSelf: 'stretch',
-      justifyContent: 'center',
-      paddingRight: 16,
-      paddingLeft: 16,
-    },
-    cell: {
-      paddingTop: 0,
-      paddingBottom: 0,
-      paddingLeft: 20,
-      paddingRight: 0,
-    },
-    sub_cell: {
-      paddingTop: 0,
-      paddingBottom: 0,
-      paddingRight: 0,
-      paddingLeft: 40,
-      backgroundColor: palette.blue40,
-    },
-    sub_cell__selected: {
-      paddingTop: 0,
-      paddingBottom: 0,
-      paddingRight: 0,
-      paddingLeft: 40,
-      backgroundColor: palette.green,
-    },
-    cell_selected: {
-      paddingTop: 0,
-      paddingBottom: 0,
-      paddingLeft: 20,
-      paddingRight: 0,
-      backgroundColor: palette.green,
-    },
-    expand_chevron_hover: {
-      color: palette.white,
-    },
+  select_location: Styles.createViewStyle({
+    backgroundColor: palette.darkBlue,
+    flex: 1,
+  }),
+  container: Styles.createViewStyle({
+    flexDirection: 'column',
+    flex: 1,
+  }),
+  title_header: Styles.createViewStyle({
+    paddingBottom: 0,
+  }),
+  subtitle_header: Styles.createViewStyle({
+    paddingTop: 0,
+  }),
+  content: Styles.createViewStyle({
+    overflow: 'visible',
+  }),
+  relay_status: Styles.createViewStyle({
+    width: 16,
+    height: 16,
+    borderRadius: 8,
+    marginLeft: 4,
+    marginRight: 4,
+    marginTop: 20,
+    marginBottom: 20,
+  }),
+  relay_status__inactive: Styles.createViewStyle({
+    backgroundColor: palette.red95,
+  }),
+  relay_status__active: Styles.createViewStyle({
+    backgroundColor: palette.green90,
+  }),
+  tick_icon: Styles.createViewStyle({
+    color: palette.white,
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 15.5,
+    marginBottom: 15.5,
+  }),
+  country: Styles.createViewStyle({
+    flexDirection: 'column',
+    flex: 0,
+  }),
+  collapse_button: Styles.createViewStyle({
+    flex: 0,
+    alignSelf: 'stretch',
+    justifyContent: 'center',
+    paddingRight: 16,
+    paddingLeft: 16,
+  }),
+  cell: Styles.createViewStyle({
+    paddingTop: 0,
+    paddingBottom: 0,
+    paddingLeft: 20,
+    paddingRight: 0,
+  }),
+  sub_cell: Styles.createViewStyle({
+    paddingTop: 0,
+    paddingBottom: 0,
+    paddingRight: 0,
+    paddingLeft: 40,
+    backgroundColor: palette.blue40,
+  }),
+  sub_cell__selected: Styles.createViewStyle({
+    paddingTop: 0,
+    paddingBottom: 0,
+    paddingRight: 0,
+    paddingLeft: 40,
+    backgroundColor: palette.green,
+  }),
+  cell_selected: Styles.createViewStyle({
+    paddingTop: 0,
+    paddingBottom: 0,
+    paddingLeft: 20,
+    paddingRight: 0,
+    backgroundColor: palette.green,
+  }),
+  expand_chevron_hover: Styles.createViewStyle({
+    color: palette.white,
   }),
 };

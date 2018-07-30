@@ -1,20 +1,18 @@
-import { colors } from '../../config';
-
-import { createViewStyles } from '../../lib/styles';
+// @flow
+import { Styles } from 'reactxp';
+import { palette } from '@mullvad/components';
 
 export default {
-  ...createViewStyles({
-    transparent: {
-      backgroundColor: colors.white20,
-    },
-    transparentHover: {
-      backgroundColor: colors.white40,
-    },
-    redTransparent: {
-      backgroundColor: colors.red40,
-    },
-    redTransparentHover: {
-      backgroundColor: colors.red45,
-    },
+  transparent: Styles.createViewStyle({
+    backgroundColor: palette.white20,
+  }),
+  transparentHover: Styles.createViewStyle({
+    backgroundColor: palette.white40,
+  }),
+  redTransparent: Styles.createViewStyle({
+    backgroundColor: palette.red40,
+  }),
+  redTransparentHover: Styles.createViewStyle({
+    backgroundColor: palette.red45,
   }),
 };

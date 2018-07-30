@@ -1,21 +1,21 @@
 import { Styles } from 'reactxp';
-import { colors } from '../../config';
+import palette from './palette';
 
 export default {
   transparent: Styles.createViewStyle({
-    backgroundColor: colors.white20,
+    backgroundColor: palette.white20,
     backdropFilter: 'blur(4px)',
   }),
   transparentHover: Styles.createViewStyle({
-    backgroundColor: colors.white40,
+    backgroundColor: palette.white40,
     backdropFilter: 'blur(4px)',
   }),
   redTransparent: Styles.createViewStyle({
-    backgroundColor: colors.red40,
+    backgroundColor: palette.red40,
     backdropFilter: 'blur(4px)',
   }),
   redTransparentHover: Styles.createViewStyle({
-    backgroundColor: colors.red45,
+    backgroundColor: palette.red45,
     backdropFilter: 'blur(4px)',
   }),
 };

@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
-import { Button, Component, Text, View, Styles, palette } from 'reactxp';
-import { Img } from '@mullvad/components';
+import { Button, Component, Text, View, Styles } from 'reactxp';
+import { Img, palette } from '@mullvad/components';
 
 const styles = {
   navigationBar: {

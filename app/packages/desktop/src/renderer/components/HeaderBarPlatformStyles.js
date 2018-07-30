@@ -1,16 +1,14 @@
 // @flow
-import { createViewStyles } from '../lib/styles';
+import { Styles } from 'reactxp';
 
 export default {
-  ...createViewStyles({
-    darwin: {
-      paddingTop: 24,
-    },
-    linux: {
-      WebkitAppRegion: 'drag',
-    },
-    settings_icon: {
-      WebkitAppRegion: 'no-drag',
-    },
+  darwin: Styles.createViewStyle({
+    paddingTop: 24,
+  }),
+  linux: Styles.createViewStyle({
+    WebkitAppRegion: 'drag',
+  }),
+  settings_icon: Styles.createViewStyle({
+    WebkitAppRegion: 'no-drag',
   }),
 };

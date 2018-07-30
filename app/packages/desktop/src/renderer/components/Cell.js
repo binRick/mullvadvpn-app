@@ -1,50 +1,45 @@
 // @flow
 import * as React from 'react';
-import { Button, Text, Component, Types } from 'reactxp';
+import { Button, Text, Component, Types, Styles } from 'reactxp';
 import { Img, palette } from '@mullvad/components';
-import { createViewStyles, createTextStyles } from '../lib/styles';
 
 const styles = {
-  ...createViewStyles({
-    cell: {
-      backgroundColor: palette.blue,
-      paddingTop: 14,
-      paddingBottom: 14,
-      paddingLeft: 16,
-      paddingRight: 16,
-      marginBottom: 1,
-      flex: 1,
-      flexDirection: 'row',
-      alignItems: 'center',
-      alignContent: 'center',
-    },
-    cellHover: {
-      backgroundColor: palette.blue80,
-    },
-    icon: {
-      color: palette.white60,
-      marginLeft: 8,
-    },
+  cell: Styles.createViewStyle({
+    backgroundColor: palette.blue,
+    paddingTop: 14,
+    paddingBottom: 14,
+    paddingLeft: 16,
+    paddingRight: 16,
+    marginBottom: 1,
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignContent: 'center',
   }),
-  ...createTextStyles({
-    label: {
-      color: palette.white,
-      alignSelf: 'center',
-      fontFamily: 'DINPro',
-      fontSize: 20,
-      fontWeight: '900',
-      lineHeight: 26,
-      flex: 1,
-      marginLeft: 8,
-    },
-    subtext: {
-      color: palette.white60,
-      fontFamily: 'Open Sans',
-      fontSize: 13,
-      fontWeight: '800',
-      flex: 0,
-      textAlign: 'right',
-    },
+  cellHover: Styles.createViewStyle({
+    backgroundColor: palette.blue80,
+  }),
+  icon: Styles.createViewStyle({
+    color: palette.white60,
+    marginLeft: 8,
+  }),
+  label: Styles.createTextStyle({
+    color: palette.white,
+    alignSelf: 'center',
+    fontFamily: 'DINPro',
+    fontSize: 20,
+    fontWeight: '900',
+    lineHeight: 26,
+    flex: 1,
+    marginLeft: 8,
+  }),
+  subtext: Styles.createTextStyle({
+    color: palette.white60,
+    fontFamily: 'Open Sans',
+    fontSize: 13,
+    fontWeight: '800',
+    flex: 0,
+    textAlign: 'right',
   }),
 };
 
