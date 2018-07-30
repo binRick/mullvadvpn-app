@@ -1,3 +1,4 @@
+// @flow
 import { Styles } from 'reactxp';
 import palette from './palette';
 
