@@ -76,7 +76,7 @@ export default class Settings extends Component<SettingsProps> {
 
     return (
       <View>
-        <View style={styles.settings_account} testName="settings__account">
+        <View testName="settings__account">
           {isOutOfTime ? (
             <Cell.CellButton
               onPress={this.props.onViewAccount}
