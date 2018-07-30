@@ -1,11 +1,9 @@
 // @flow
 import * as React from 'react';
 import { Component, Text, View, Animated, Styles, UserInterface } from 'reactxp';
+import { AccountInput, Accordion, AppButton, Img } from '@mullvad/components';
 import { Layout, Container, Header } from './Layout';
-import { AccountInput, Accordion } from '@mullvad/components';
-import Img from './Img';
 import * as Cell from './Cell';
-import * as AppButton from './AppButton';
 import styles from './LoginStyles';
 import { colors } from '../../config';
 

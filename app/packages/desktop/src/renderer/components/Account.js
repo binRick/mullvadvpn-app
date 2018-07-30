@@ -2,12 +2,11 @@
 import moment from 'moment';
 import * as React from 'react';
 import { Component, Text, View, App, Types } from 'reactxp';
-import { AppButton } from '@mullvad/components';
+import { AppButton, Img } from '@mullvad/components';
 import { Layout, Container } from './Layout';
 import NavigationBar, { BackBarItem } from './NavigationBar';
 import SettingsHeader, { HeaderTitle } from './SettingsHeader';
 import styles from './AccountStyles';
-import Img from './Img';
 
 import type { AccountToken } from '../lib/daemon-rpc';
 

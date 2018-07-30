@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import { Button, Component, Text, View, Styles } from 'reactxp';
-import Img from './Img';
+import { Img } from '@mullvad/components';
 import { colors } from '../../config';
 
 const styles = {

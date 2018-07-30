@@ -2,14 +2,13 @@
 import moment from 'moment';
 import * as React from 'react';
 import { Component, View } from 'reactxp';
-import * as AppButton from './AppButton';
-import * as Cell from './Cell';
+import { AppButton, Img } from '@mullvad/components';
 import { Layout, Container } from './Layout';
 import NavigationBar, { CloseBarItem } from './NavigationBar';
 import SettingsHeader, { HeaderTitle } from './SettingsHeader';
+import * as Cell from './Cell';
 import CustomScrollbars from './CustomScrollbars';
 import styles from './SettingsStyles';
-import Img from './Img';
 
 import type { AccountReduxState } from '../redux/account/reducers';
 import type { SettingsReduxState } from '../redux/settings/reducers';

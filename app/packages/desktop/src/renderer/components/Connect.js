@@ -4,9 +4,7 @@ import moment from 'moment';
 import * as React from 'react';
 import { Layout, Container, Header } from './Layout';
 import { Component, Text, View, Types } from 'reactxp';
-import * as AppButton from './AppButton';
-import Img from './Img';
-import { Accordion } from '@mullvad/components';
+import { Accordion, AppButton, Img } from '@mullvad/components';
 import styles from './ConnectStyles';
 
 import { NoCreditError, NoInternetError } from '../errors';

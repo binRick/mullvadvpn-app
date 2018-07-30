@@ -2,14 +2,13 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { View } from 'reactxp';
-import { Accordion } from '@mullvad/components';
+import { Accordion, Img } from '@mullvad/components';
 import { Layout, Container } from './Layout';
 import CustomScrollbars from './CustomScrollbars';
 import NavigationBar, { CloseBarItem } from './NavigationBar';
 import SettingsHeader, { HeaderTitle, HeaderSubTitle } from './SettingsHeader';
 import * as Cell from './Cell';
 import styles from './SelectLocationStyles';
-import Img from './Img';
 
 import type {
   SettingsReduxState,

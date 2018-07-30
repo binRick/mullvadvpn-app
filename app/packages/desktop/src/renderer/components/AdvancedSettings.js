@@ -1,13 +1,12 @@
 // @flow
-
 import * as React from 'react';
 import { Button, Component, Text, View } from 'reactxp';
+import { Img } from '@mullvad/components';
 import { Layout, Container } from './Layout';
 import NavigationBar, { BackBarItem } from './NavigationBar';
 import SettingsHeader, { HeaderTitle } from './SettingsHeader';
 import CustomScrollbars from './CustomScrollbars';
 import styles from './AdvancedSettingsStyles';
-import Img from './Img';
 
 type AdvancedSettingsProps = {
   protocol: string,

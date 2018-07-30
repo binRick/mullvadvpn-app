@@ -1,12 +1,11 @@
 // @flow
 import * as React from 'react';
 import { Component, Text, View, TextInput } from 'reactxp';
-import * as AppButton from './AppButton';
+import { AppButton, Img } from '@mullvad/components';
 import { Layout, Container } from './Layout';
 import NavigationBar, { BackBarItem } from './NavigationBar';
 import SettingsHeader, { HeaderTitle, HeaderSubTitle } from './SettingsHeader';
 import styles from './SupportStyles';
-import Img from './Img';
 
 import type { AccountToken } from '../lib/daemon-rpc';
 import type { SupportReportForm } from '../redux/support/actions';

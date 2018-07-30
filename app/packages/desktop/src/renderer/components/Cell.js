@@ -1,8 +1,7 @@
 // @flow
-
 import * as React from 'react';
 import { Button, Text, Component, Types } from 'reactxp';
-import Img from './Img';
+import { Img } from '@mullvad/components';
 import { createViewStyles, createTextStyles } from '../lib/styles';
 import { colors } from '../../config';
 

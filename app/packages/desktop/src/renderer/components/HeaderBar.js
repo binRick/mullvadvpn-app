@@ -1,9 +1,7 @@
 // @flow
 import * as React from 'react';
 import { Component, Text, Button, View } from 'reactxp';
-
-import Img from './Img';
-
+import { Img } from '@mullvad/components';
 import styles from './HeaderBarStyles';
 import platformStyles from './HeaderBarPlatformStyles';
 
