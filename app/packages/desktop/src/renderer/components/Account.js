@@ -2,7 +2,7 @@
 import moment from 'moment';
 import * as React from 'react';
 import { Component, Text, View, App, Types } from 'reactxp';
-import * as AppButton from './AppButton';
+import { AppButton } from '@mullvad/components';
 import { Layout, Container } from './Layout';
 import NavigationBar, { BackBarItem } from './NavigationBar';
 import SettingsHeader, { HeaderTitle } from './SettingsHeader';
