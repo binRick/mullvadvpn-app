@@ -1,9 +1,7 @@
 // @flow
-
 import * as React from 'react';
-import { Button, Component, Text, View, Styles } from 'reactxp';
+import { Button, Component, Text, View, Styles, palette } from 'reactxp';
 import { Img } from '@mullvad/components';
-import { colors } from '../../config';
 
 const styles = {
   navigationBar: {
@@ -49,7 +47,7 @@ const styles = {
       fontFamily: 'Open Sans',
       fontSize: 13,
       fontWeight: '600',
-      color: colors.white60,
+      color: palette.white60,
     }),
     icon: Styles.createViewStyle({
       opacity: 0.6,

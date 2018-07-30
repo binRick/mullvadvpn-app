@@ -1,10 +1,11 @@
+// @flow
 import { createViewStyles, createTextStyles } from '../lib/styles';
-import { colors } from '../../config';
+import { palette } from '@mullvad/components';
 
 export default Object.assign(
   createViewStyles({
     support: {
-      backgroundColor: colors.darkBlue,
+      backgroundColor: palette.darkBlue,
       flex: 1,
     },
     support__container: {
@@ -73,8 +74,8 @@ export default Object.assign(
       fontSize: 13,
       fontWeight: '600',
       lineHeight: 26,
-      color: colors.blue,
-      backgroundColor: colors.white,
+      color: palette.blue,
+      backgroundColor: palette.white,
     },
     support__form_message: {
       paddingTop: 14,
@@ -84,13 +85,13 @@ export default Object.assign(
       fontFamily: 'Open Sans',
       fontSize: 13,
       fontWeight: '600',
-      color: colors.blue,
-      backgroundColor: colors.white,
+      color: palette.blue,
+      backgroundColor: palette.white,
       flex: 1,
     },
     support__sent_email: {
       fontWeight: '900',
-      color: colors.white,
+      color: palette.white,
     },
     support__status_security__secure: {
       fontFamily: 'Open Sans',
@@ -98,7 +99,7 @@ export default Object.assign(
       fontWeight: '800',
       lineHeight: 22,
       marginBottom: 4,
-      color: colors.green,
+      color: palette.green,
     },
     support__send_status: {
       fontFamily: 'DINPro',
@@ -107,14 +108,14 @@ export default Object.assign(
       maxHeight: 'calc(1.16em * 2)',
       overflow: 'visible',
       letterSpacing: -0.9,
-      color: colors.white,
+      color: palette.white,
       marginBottom: 4,
     },
     support__no_email_warning: {
       fontFamily: 'Open Sans',
       fontSize: 13,
       lineHeight: 16,
-      color: colors.white80,
+      color: palette.white80,
       marginBottom: 12,
     },
   }),

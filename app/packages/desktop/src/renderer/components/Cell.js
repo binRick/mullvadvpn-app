@@ -1,14 +1,13 @@
 // @flow
 import * as React from 'react';
 import { Button, Text, Component, Types } from 'reactxp';
-import { Img } from '@mullvad/components';
+import { Img, palette } from '@mullvad/components';
 import { createViewStyles, createTextStyles } from '../lib/styles';
-import { colors } from '../../config';
 
 const styles = {
   ...createViewStyles({
     cell: {
-      backgroundColor: colors.blue,
+      backgroundColor: palette.blue,
       paddingTop: 14,
       paddingBottom: 14,
       paddingLeft: 16,
@@ -20,16 +19,16 @@ const styles = {
       alignContent: 'center',
     },
     cellHover: {
-      backgroundColor: colors.blue80,
+      backgroundColor: palette.blue80,
     },
     icon: {
-      color: colors.white60,
+      color: palette.white60,
       marginLeft: 8,
     },
   }),
   ...createTextStyles({
     label: {
-      color: colors.white,
+      color: palette.white,
       alignSelf: 'center',
       fontFamily: 'DINPro',
       fontSize: 20,
@@ -39,7 +38,7 @@ const styles = {
       marginLeft: 8,
     },
     subtext: {
-      color: colors.white60,
+      color: palette.white60,
       fontFamily: 'Open Sans',
       fontSize: 13,
       fontWeight: '800',

@@ -1,8 +1,7 @@
 // @flow
-
 import * as React from 'react';
 import { Component, Text, View, Styles } from 'reactxp';
-import { colors } from '../../config';
+import { palette } from '@mullvad/components';
 
 const styles = {
   header: {
@@ -24,7 +23,7 @@ const styles = {
     fontSize: 32,
     fontWeight: '900',
     lineHeight: 40,
-    color: colors.white,
+    color: palette.white,
   }),
   subtitle: Styles.createTextStyle({
     marginTop: 4,
@@ -32,7 +31,7 @@ const styles = {
     fontSize: 13,
     fontWeight: '600',
     overflow: 'visible',
-    color: colors.white80,
+    color: palette.white80,
     lineHeight: 20,
     letterSpacing: -0.2,
   }),

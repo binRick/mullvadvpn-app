@@ -1,12 +1,11 @@
 // @flow
-
 import { createViewStyles, createTextStyles } from '../lib/styles';
-import { colors } from '../../config';
+import { palette } from '@mullvad/components';
 
 export default {
   ...createViewStyles({
     advanced_settings: {
-      backgroundColor: colors.darkBlue,
+      backgroundColor: palette.darkBlue,
       flex: 1,
     },
     advanced_settings__container: {
@@ -27,7 +26,7 @@ export default {
     },
     advanced_settings__cell: {
       cursor: 'default',
-      backgroundColor: colors.green,
+      backgroundColor: palette.green,
       flexDirection: 'row',
       paddingTop: 14,
       paddingBottom: 14,
@@ -37,10 +36,10 @@ export default {
       justifyContent: 'flex-start',
     },
     advanced_settings__cell_hover: {
-      backgroundColor: colors.blue80,
+      backgroundColor: palette.blue80,
     },
     advanced_settings__cell_selected_hover: {
-      backgroundColor: colors.green,
+      backgroundColor: palette.green,
     },
     advanced_settings__cell_spacer: {
       height: 24,
@@ -50,7 +49,7 @@ export default {
       height: 24,
       marginRight: 8,
       flex: 0,
-      color: colors.white80,
+      color: palette.white80,
     },
     advanced_settings__cell_dimmed: {
       cursor: 'default',
@@ -59,7 +58,7 @@ export default {
       paddingLeft: 24,
       paddingRight: 24,
       marginBottom: 1,
-      backgroundColor: colors.blue40,
+      backgroundColor: palette.blue40,
       flexDirection: 'row',
       justifyContent: 'flex-start',
     },
@@ -79,7 +78,7 @@ export default {
   }),
   ...createTextStyles({
     advanced_settings__section_title: {
-      backgroundColor: colors.blue,
+      backgroundColor: palette.blue,
       paddingTop: 14,
       paddingBottom: 14,
       paddingLeft: 24,
@@ -89,7 +88,7 @@ export default {
       fontSize: 20,
       fontWeight: '900',
       lineHeight: 26,
-      color: colors.white,
+      color: palette.white,
     },
     advanced_settings__cell_label: {
       fontFamily: 'DINPro',
@@ -97,7 +96,7 @@ export default {
       fontWeight: '900',
       lineHeight: 26,
       letterSpacing: -0.2,
-      color: colors.white,
+      color: palette.white,
       flex: 0,
     },
     advanced_settings__cell_footer_label: {
@@ -106,7 +105,7 @@ export default {
       fontWeight: '600',
       lineHeight: 20,
       letterSpacing: -0.2,
-      color: colors.white80,
+      color: palette.white80,
     },
   }),
 };

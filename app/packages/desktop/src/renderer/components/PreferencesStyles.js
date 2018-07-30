@@ -1,11 +1,11 @@
 // @flow
 import { createViewStyles, createTextStyles } from '../lib/styles';
-import { colors } from '../../config';
+import { palette } from '@mullvad/components';
 
 export default {
   ...createViewStyles({
     preferences: {
-      backgroundColor: colors.darkBlue,
+      backgroundColor: palette.darkBlue,
       flex: 1,
     },
     preferences__container: {
@@ -20,7 +20,7 @@ export default {
       flexBasis: 'auto',
     },
     preferences__cell: {
-      backgroundColor: colors.blue,
+      backgroundColor: palette.blue,
       flexDirection: 'row',
       alignItems: 'center',
     },
@@ -48,7 +48,7 @@ export default {
       fontWeight: '900',
       lineHeight: 26,
       letterSpacing: -0.2,
-      color: colors.white,
+      color: palette.white,
     },
     preferences__cell_footer_label: {
       fontFamily: 'Open Sans',
@@ -56,7 +56,7 @@ export default {
       fontWeight: '600',
       lineHeight: 20,
       letterSpacing: -0.2,
-      color: colors.white80,
+      color: palette.white80,
     },
   }),
 };

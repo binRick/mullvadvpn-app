@@ -1,6 +1,6 @@
 // @flow
 import { createViewStyles, createTextStyles } from '../lib/styles';
-import { colors } from '../../config';
+import { palette } from '@mullvad/components';
 
 export default {
   ...createViewStyles({
@@ -41,7 +41,7 @@ export default {
       borderRadius: 5,
       marginTop: 4,
       marginRight: 8,
-      backgroundColor: colors.red,
+      backgroundColor: palette.red,
     },
     status: {
       paddingTop: 0,
@@ -74,8 +74,8 @@ export default {
       paddingLeft: 20,
       paddingRight: 20,
       paddingBottom: 8,
-      color: colors.white60,
-      backgroundColor: colors.blue,
+      color: palette.white60,
+      backgroundColor: palette.blue,
     },
     server_label: {
       fontFamily: 'DINPro',
@@ -83,7 +83,7 @@ export default {
       fontWeight: '900',
       lineHeight: 44,
       letterSpacing: -0.7,
-      color: colors.white,
+      color: palette.white,
       marginBottom: 7,
       flex: 0,
     },
@@ -92,14 +92,14 @@ export default {
       fontSize: 32,
       fontWeight: '900',
       lineHeight: 40,
-      color: colors.white,
+      color: palette.white,
       marginBottom: 8,
     },
     error_message: {
       fontFamily: 'Open Sans',
       fontSize: 13,
       fontWeight: '600',
-      color: colors.white,
+      color: palette.white,
       marginBottom: 24,
     },
     status_security: {
@@ -108,19 +108,19 @@ export default {
       fontWeight: '800',
       lineHeight: 22,
       marginBottom: 4,
-      color: colors.white,
+      color: palette.white,
     },
     status_security__secure: {
-      color: colors.green,
+      color: palette.green,
     },
     status_security__unsecured: {
-      color: colors.red,
+      color: palette.red,
     },
     status_ipaddress: {
       fontFamily: 'Open Sans',
       fontSize: 16,
       fontWeight: '800',
-      color: colors.white,
+      color: palette.white,
     },
     status_ipaddress__invisible: {
       opacity: 0,
@@ -132,7 +132,7 @@ export default {
       lineHeight: 40,
       overflow: 'hidden',
       letterSpacing: -0.9,
-      color: colors.white,
+      color: palette.white,
       marginBottom: 4,
     },
   }),

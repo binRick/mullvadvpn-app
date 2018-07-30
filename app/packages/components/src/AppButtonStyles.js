@@ -1,30 +1,30 @@
 import { Styles } from 'reactxp';
-import { colors } from '../../config';
+import palette from './palette';
 
 export default {
   red: Styles.createViewStyle({
-    backgroundColor: colors.red,
+    backgroundColor: palette.red,
   }),
   redHover: Styles.createViewStyle({
-    backgroundColor: colors.red95,
+    backgroundColor: palette.red95,
   }),
   green: Styles.createViewStyle({
-    backgroundColor: colors.green,
+    backgroundColor: palette.green,
   }),
   greenHover: Styles.createViewStyle({
-    backgroundColor: colors.green90,
+    backgroundColor: palette.green90,
   }),
   blue: Styles.createViewStyle({
-    backgroundColor: colors.blue80,
+    backgroundColor: palette.blue80,
   }),
   blueHover: Styles.createViewStyle({
-    backgroundColor: colors.blue60,
+    backgroundColor: palette.blue60,
   }),
   white80: Styles.createViewStyle({
-    color: colors.white80,
+    color: palette.white80,
   }),
   white: Styles.createViewStyle({
-    color: colors.white,
+    color: palette.white,
   }),
   icon: Styles.createViewStyle({
     position: 'absolute',

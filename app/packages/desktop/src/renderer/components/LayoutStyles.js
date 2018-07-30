@@ -1,6 +1,6 @@
 // @flow
 import { createViewStyles } from '../lib/styles';
-import { colors } from '../../config';
+import { palette } from '@mullvad/components';
 
 export default {
   ...createViewStyles({
@@ -13,7 +13,7 @@ export default {
     },
     container: {
       flex: 1,
-      backgroundColor: colors.blue,
+      backgroundColor: palette.blue,
       overflow: 'hidden',
     },
   }),

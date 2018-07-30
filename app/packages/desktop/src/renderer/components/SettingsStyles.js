@@ -1,10 +1,11 @@
+// @flow
 import { createViewStyles, createTextStyles } from '../lib/styles';
-import { colors } from '../../config';
+import { palette } from '@mullvad/components';
 
 export default {
   ...createViewStyles({
     settings: {
-      backgroundColor: colors.darkBlue,
+      backgroundColor: palette.darkBlue,
       flex: 1,
     },
     settings__container: {
@@ -35,7 +36,7 @@ export default {
   }),
   ...createTextStyles({
     settings__account_paid_until_label__error: {
-      color: colors.red,
+      color: palette.red,
     },
   }),
 };

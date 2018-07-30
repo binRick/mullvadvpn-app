@@ -1,6 +1,6 @@
 // @flow
 import { createViewStyles, createTextStyles } from '../lib/styles';
-import { colors } from '../../config';
+import { palette } from '@mullvad/components';
 
 export default {
   ...createViewStyles({
@@ -10,7 +10,7 @@ export default {
       paddingBottom: 24,
       paddingLeft: 24,
       paddingRight: 24,
-      backgroundColor: colors.darkBlue,
+      backgroundColor: palette.darkBlue,
     },
     status_icon: {
       flex: 0,
@@ -37,25 +37,25 @@ export default {
       borderColor: 'transparent',
     },
     account_input_group__active: {
-      borderColor: colors.darkBlue,
+      borderColor: palette.darkBlue,
     },
     account_input_group__inactive: {
       opacity: 0.6,
     },
     account_input_group__error: {
-      borderColor: colors.red40,
-      color: colors.red,
+      borderColor: palette.red40,
+      color: palette.red,
     },
     account_input_textfield: {
-      color: colors.blue,
+      color: palette.blue,
     },
     account_input_backdrop: {
-      backgroundColor: colors.white,
-      borderColor: colors.darkBlue,
+      backgroundColor: palette.white,
+      borderColor: palette.darkBlue,
       flexDirection: 'row',
     },
     account_input_textfield__inactive: {
-      backgroundColor: colors.white60,
+      backgroundColor: palette.white60,
     },
     input_button: {
       flex: 0,
@@ -65,7 +65,7 @@ export default {
       justifyContent: 'center',
     },
     input_button__invisible: {
-      backgroundColor: colors.white,
+      backgroundColor: palette.white,
       opacity: 0,
     },
     input_arrow: {
@@ -74,18 +74,18 @@ export default {
       width: 48,
       alignItems: 'center',
       justifyContent: 'center',
-      color: colors.blue20,
+      color: palette.blue20,
     },
     input_arrow__active: {
-      color: colors.white,
+      color: palette.white,
     },
     input_arrow__invisible: {
-      color: colors.white,
+      color: palette.white,
       opacity: 0,
     },
     account_dropdown__spacer: {
       height: 1,
-      backgroundColor: colors.darkBlue,
+      backgroundColor: palette.darkBlue,
     },
     account_dropdown__item: {
       paddingTop: 10,
@@ -94,28 +94,28 @@ export default {
       paddingBottom: 12,
       marginBottom: 0,
       flexDirection: 'row',
-      backgroundColor: colors.white60,
+      backgroundColor: palette.white60,
     },
     account_dropdown__item_hover: {
-      backgroundColor: colors.white40,
+      backgroundColor: palette.white40,
     },
     account_dropdown__remove: {
       justifyContent: 'center',
-      color: colors.blue40,
+      color: palette.blue40,
     },
     account_dropdown__remove_cell_hover: {
-      color: colors.blue60,
+      color: palette.blue60,
     },
     account_dropdown__remove_hover: {
-      color: colors.blue,
+      color: palette.blue,
     },
     account_dropdown__label_hover: {
-      color: colors.blue,
+      color: palette.blue,
     },
   }),
   ...createTextStyles({
     login_footer__prompt: {
-      color: colors.white80,
+      color: palette.white80,
       fontFamily: 'Open Sans',
       fontSize: 13,
       fontWeight: '600',
@@ -129,7 +129,7 @@ export default {
       fontWeight: '900',
       lineHeight: 44,
       letterSpacing: -0.7,
-      color: colors.white,
+      color: palette.white,
       marginBottom: 7,
       flex: 0,
     },
@@ -138,7 +138,7 @@ export default {
       fontSize: 13,
       fontWeight: '600',
       letterSpacing: -0.2,
-      color: colors.white80,
+      color: palette.white80,
       marginBottom: 8,
     },
     account_input_textfield: {
@@ -151,7 +151,7 @@ export default {
       fontSize: 20,
       fontWeight: '900',
       lineHeight: 26,
-      color: colors.blue,
+      color: palette.blue,
       backgroundColor: 'transparent',
       flex: 1,
     },
@@ -161,7 +161,7 @@ export default {
       fontSize: 20,
       fontWeight: '900',
       lineHeight: 26,
-      color: colors.blue80,
+      color: palette.blue80,
       borderWidth: 0,
       textAlign: 'left',
       marginLeft: 0,

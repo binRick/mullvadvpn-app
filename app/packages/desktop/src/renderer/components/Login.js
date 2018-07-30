@@ -1,11 +1,10 @@
 // @flow
 import * as React from 'react';
 import { Component, Text, View, Animated, Styles, UserInterface } from 'reactxp';
-import { AccountInput, Accordion, AppButton, Img } from '@mullvad/components';
+import { AccountInput, Accordion, AppButton, Img, palette } from '@mullvad/components';
 import { Layout, Container, Header } from './Layout';
 import * as Cell from './Cell';
 import styles from './LoginStyles';
-import { colors } from '../../config';
 
 import type { LoginState } from '../redux/account/reducers';
 import type { AccountToken } from '../lib/daemon-rpc';
@@ -63,7 +62,7 @@ export default class Login extends Component<Props, State> {
       backgroundColor: Animated.interpolate(
         this._loginButtonAnimatedValue,
         [0.0, 1.0],
-        [colors.white, colors.green],
+        [palette.white, palette.green],
       ),
     });
   }
@@ -345,7 +344,7 @@ export default class Login extends Component<Props, State> {
               style={styles.account_input_textfield}
               type="text"
               placeholder="0000 0000 0000 0000"
-              placeholderTextColor={colors.blue40}
+              placeholderTextColor={palette.blue40}
               onFocus={this._onFocus}
               onBlur={this._onBlur}
               onChange={this._onInputChange}

@@ -1,11 +1,11 @@
 // @flow
 import { createViewStyles } from '../lib/styles';
-import { colors } from '../../config';
+import { palette } from '@mullvad/components';
 
 export default {
   ...createViewStyles({
     select_location: {
-      backgroundColor: colors.darkBlue,
+      backgroundColor: palette.darkBlue,
       flex: 1,
     },
     container: {
@@ -31,13 +31,13 @@ export default {
       marginBottom: 20,
     },
     relay_status__inactive: {
-      backgroundColor: colors.red95,
+      backgroundColor: palette.red95,
     },
     relay_status__active: {
-      backgroundColor: colors.green90,
+      backgroundColor: palette.green90,
     },
     tick_icon: {
-      color: colors.white,
+      color: palette.white,
       marginLeft: 0,
       marginRight: 0,
       marginTop: 15.5,
@@ -65,24 +65,24 @@ export default {
       paddingBottom: 0,
       paddingRight: 0,
       paddingLeft: 40,
-      backgroundColor: colors.blue40,
+      backgroundColor: palette.blue40,
     },
     sub_cell__selected: {
       paddingTop: 0,
       paddingBottom: 0,
       paddingRight: 0,
       paddingLeft: 40,
-      backgroundColor: colors.green,
+      backgroundColor: palette.green,
     },
     cell_selected: {
       paddingTop: 0,
       paddingBottom: 0,
       paddingLeft: 20,
       paddingRight: 0,
-      backgroundColor: colors.green,
+      backgroundColor: palette.green,
     },
     expand_chevron_hover: {
-      color: colors.white,
+      color: palette.white,
     },
   }),
 };

@@ -1,6 +1,6 @@
 // @flow
 import { createTextStyles, createViewStyles } from '../lib/styles';
-import { colors } from '../../config';
+import { palette } from '@mullvad/components';
 
 export default {
   ...createViewStyles({
@@ -9,19 +9,19 @@ export default {
       paddingBottom: 12,
       paddingLeft: 12,
       paddingRight: 12,
-      backgroundColor: colors.blue,
+      backgroundColor: palette.blue,
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',
     },
     style_defaultDark: {
-      backgroundColor: colors.darkBlue,
+      backgroundColor: palette.darkBlue,
     },
     style_error: {
-      backgroundColor: colors.red,
+      backgroundColor: palette.red,
     },
     style_success: {
-      backgroundColor: colors.green,
+      backgroundColor: palette.green,
     },
     container: {
       display: 'flex',
@@ -33,10 +33,10 @@ export default {
       padding: 0,
     },
     settings_icon: {
-      color: colors.white60,
+      color: palette.white60,
     },
     settings_icon_hover: {
-      color: colors.white,
+      color: palette.white,
     },
   }),
   ...createTextStyles({
@@ -46,7 +46,7 @@ export default {
       fontWeight: '900',
       lineHeight: 30,
       letterSpacing: -0.5,
-      color: colors.white60,
+      color: palette.white60,
       marginLeft: 8,
     },
   }),

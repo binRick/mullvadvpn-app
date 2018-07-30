@@ -1,12 +1,11 @@
 // @flow
-
 import { createViewStyles, createTextStyles } from '../lib/styles';
-import { colors } from '../../config';
+import { palette } from '@mullvad/components';
 
 export default {
   ...createViewStyles({
     account: {
-      backgroundColor: colors.darkBlue,
+      backgroundColor: palette.darkBlue,
       flex: 1,
     },
     account__container: {
@@ -50,20 +49,20 @@ export default {
       fontWeight: '600',
       lineHeight: 20,
       letterSpacing: -0.2,
-      color: colors.white60,
+      color: palette.white60,
       marginBottom: 9,
     },
     account__row_value: {
       fontFamily: 'Open Sans',
       fontSize: 16,
       fontWeight: '800',
-      color: colors.white,
+      color: palette.white,
     },
     account__out_of_time: {
       fontFamily: 'Open Sans',
       fontSize: 16,
       fontWeight: '800',
-      color: colors.red,
+      color: palette.red,
     },
     account__footer_label: {
       fontFamily: 'Open Sans',
@@ -71,7 +70,7 @@ export default {
       fontWeight: '600',
       lineHeight: 20,
       letterSpacing: -0.2,
-      color: colors.white80,
+      color: palette.white80,
     },
   }),
 };
