@@ -1,10 +1,9 @@
 {
   "private": true,
-  "workspaces": [
-    "packages/desktop",
-    "packages/mobile",
-    "packages/components"
-  ],
+  "workspaces": {
+    "packages": ["packages/*"],
+    "nohoist": ["**/react-native", "**/react-native/**"]
+  },
   "scripts": {
     "flow": "flow",
     "lint": "eslint \"packages/**/*.js\"",
@@ -13,24 +12,9 @@
     "private:format": "prettier \"packages/**/*.{js,css}\""
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.6",
-    "babel-plugin-transform-builtin-extend": "^1.1.2",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
     "eslint": "^5.2.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-flowtype": "^2.50.0",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-react": "^7.10.0",
     "flow-bin": "0.66",
     "flow-typed": "^2.5.1",
     "prettier": "1.13.7"
-  },
-  "dependencies": {
-    "babel-runtime": "^6.26.0"
   }
 }

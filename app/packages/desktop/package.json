@@ -1,7 +1,8 @@
 {
-  "name": "@mullvad/desktop-app",
+  "name": "@mullvad/desktop",
   "version": "2018.2.0-beta2",
   "productName": "Mullvad VPN",
+  "private": true,
   "description": "Mullvad VPN client",
   "main": "init.js",
   "author": {
@@ -12,6 +13,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "@mullvad/components": "2018.2.0-beta2",
+    "babel-runtime": "^6.26.0",
     "chai-as-promised": "^7.1.1",
     "d3-geo-projection": "^2.3.2",
     "electron-log": "^2.2.8",
@@ -37,6 +39,19 @@
     "windows-security": "https://github.com/mullvad/windows-security.git#0.0.5"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.2.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.10.0",
     "browser-sync": "^2.23.6",
     "chai": "^4.1.0",
     "chai-spies": "^1.0.0",

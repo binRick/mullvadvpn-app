@@ -2,6 +2,8 @@
 /app/node_modules
 /app/packages/**/node_modules
 /app/packages/**/build
+/app/packages/mobile/android
+/app/packages/mobile/ios
 /dist
 /flow-typed
 .DS_Store
