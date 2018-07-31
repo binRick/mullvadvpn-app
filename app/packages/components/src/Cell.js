@@ -1,7 +1,8 @@
 // @flow
 import * as React from 'react';
 import { Button, Text, Component, Types, Styles } from 'reactxp';
-import { Img, palette } from '@mullvad/components';
+import Img from './Img';
+import palette from './palette';
 
 const styles = {
   cell: Styles.createViewStyle({
@@ -46,16 +47,18 @@ const styles = {
 export class SubText extends Text {}
 export class Label extends Text {}
 
-type CellButtonProps = {
+type Props = {
   children?: React.Node,
   disabled?: boolean,
   cellHoverStyle?: Types.ViewStyle,
   style?: Types.ViewStyle,
 };
 
-type State = { hovered: boolean };
+type State = {
+  hovered: boolean,
+};
 
-export class CellButton extends Component<CellButtonProps, State> {
+export class CellButton extends Component<Props, State> {
   state = { hovered: false };
 
   textStyle = (cellHoverStyle?: Types.ViewStyle) => (this.state.hovered ? cellHoverStyle : null);

@@ -2,11 +2,10 @@
 import moment from 'moment';
 import * as React from 'react';
 import { Component, View } from 'reactxp';
-import { AppButton, Img } from '@mullvad/components';
+import { AppButton, Cell, Img } from '@mullvad/components';
 import { Layout, Container } from './Layout';
 import NavigationBar, { CloseBarItem } from './NavigationBar';
 import SettingsHeader, { HeaderTitle } from './SettingsHeader';
-import * as Cell from './Cell';
 import CustomScrollbars from './CustomScrollbars';
 import styles from './SettingsStyles';
 

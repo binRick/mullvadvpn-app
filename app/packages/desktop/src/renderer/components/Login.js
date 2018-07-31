@@ -1,9 +1,8 @@
 // @flow
 import * as React from 'react';
 import { Component, Text, View, Animated, Styles, UserInterface } from 'reactxp';
-import { AccountInput, Accordion, AppButton, Img, palette } from '@mullvad/components';
+import { AccountInput, Accordion, AppButton, Cell, Img, palette } from '@mullvad/components';
 import { Layout, Container, Header } from './Layout';
-import * as Cell from './Cell';
 import styles from './LoginStyles';
 
 import type { LoginState } from '../redux/account/reducers';

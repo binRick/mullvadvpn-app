@@ -2,12 +2,11 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { View } from 'reactxp';
-import { Accordion, Img } from '@mullvad/components';
+import { Accordion, Cell, Img } from '@mullvad/components';
 import { Layout, Container } from './Layout';
 import CustomScrollbars from './CustomScrollbars';
 import NavigationBar, { CloseBarItem } from './NavigationBar';
 import SettingsHeader, { HeaderTitle, HeaderSubTitle } from './SettingsHeader';
-import * as Cell from './Cell';
 import styles from './SelectLocationStyles';
 
 import type {
